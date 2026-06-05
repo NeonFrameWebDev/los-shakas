@@ -166,6 +166,14 @@ a {
   -webkit-backdrop-filter: blur(8px);
 }
 
+@media (max-width: 767px) {
+  #main-nav {
+    background: rgba(13,13,13,0.92);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+}
+
 .nav-brand {
   display: flex;
   align-items: center;
