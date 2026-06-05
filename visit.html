@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!-- ASSET NEEDED: Replace logo.jpg with high-res (1000px+) or SVG vector before client delivery. Current source is 200px FB profile pic. -->
+<html lang="es" data-es-title="Encuéntranos | Los Shakas | Puerto Peñasco" data-en-title="Come Find Us | Los Shakas | Puerto Peñasco">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuéntranos | Los Shakas | Puerto Peñasco</title>
+  <meta name="description" content="Cómo llegar a Los Shakas - Av. Luis Encinas 89-B, Recinto Portuario, Puerto Peñasco. Horarios, teléfono y mapa. El edificio rojo grande en la esquina.">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://neonframewebdev.github.io/los-shakas/visit.html">
+  <meta property="og:title"       content="Encuéntranos | Los Shakas | Puerto Peñasco">
+  <meta property="og:description" content="El edificio rojo grande en la esquina del Recinto Portuario. Av. Luis Encinas 89-B, Puerto Peñasco.">
+  <meta property="og:image"       content="https://neonframewebdev.github.io/los-shakas/assets/exterior_1.jpg">
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- PAGE LOADER -->
+<div id="loader" role="status" aria-label="Cargando...">
+  <img id="loader-logo" src="assets/logo.jpg" alt="Los Shakas logo" width="80" height="80">
+  <div id="loader-wordmark">Los Shakas</div>
+  <div id="loader-bar"></div>
+</div>
+
+<!-- NAVIGATION -->
+<nav id="main-nav" role="navigation" aria-label="Navegación principal">
+  <a class="nav-brand" href="index.html" aria-label="Los Shakas - Inicio">
+    <img class="nav-logo" src="assets/logo.jpg" alt="Los Shakas" width="40" height="40">
+    <span class="nav-wordmark">Los Shakas</span>
+  </a>
+  <div class="nav-right">
+    <ul class="nav-links" role="list">
+      <li><a href="index.html"   class="nav-page-link" data-es="Inicio"       data-en="Home">Inicio</a></li>
+      <li><a href="menu.html"    class="nav-page-link" data-es="Menú"         data-en="Menu">Menú</a></li>
+      <li><a href="gallery.html" class="nav-page-link" data-es="Galería"      data-en="Gallery">Galería</a></li>
+      <li><a href="visit.html"   class="nav-page-link" data-es="Encuéntranos" data-en="Visit">Encuéntranos</a></li>
+    </ul>
+    <div class="lang-toggle" aria-label="Cambiar idioma">
+      <button class="lang-btn-es active" aria-label="Español">ES</button>
+      <button class="lang-btn-en"        aria-label="English">EN</button>
+    </div>
+    <button id="nav-hamburger" class="nav-hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="nav-mobile-menu" class="nav-mobile-menu" aria-hidden="true">
+  <ul role="list">
+    <li><a href="index.html"   class="nav-page-link" data-es="Inicio"       data-en="Home">Inicio</a></li>
+    <li><a href="menu.html"    class="nav-page-link" data-es="Menú"         data-en="Menu">Menú</a></li>
+    <li><a href="gallery.html" class="nav-page-link" data-es="Galería"      data-en="Gallery">Galería</a></li>
+    <li><a href="visit.html"   class="nav-page-link" data-es="Encuéntranos" data-en="Visit">Encuéntranos</a></li>
+  </ul>
+</div>
+
+<!-- PAGE BANNER -->
+<header class="page-banner" aria-labelledby="visit-heading">
+  <h1 id="visit-heading" class="section-title page-banner-title section-title-teal-underline reveal"
+      data-es="Encuéntranos"
+      data-en="Come find us.">
+    Encuéntranos
+  </h1>
+  <p class="page-banner-sub reveal"
+     data-es="Estamos en el Recinto Portuario, Puerto Peñasco. El edificio rojo grande en la esquina. No tiene pierde."
+     data-en="We're in the port district, Puerto Peñasco. The big red building on the corner. You can't miss it.">
+    Estamos en el Recinto Portuario, Puerto Peñasco. El edificio rojo grande en la esquina. No tiene pierde.
+  </p>
+</header>
+
+<!-- MAIN LAYOUT -->
+<main>
+  <div class="visit-layout">
+
+    <!-- LEFT: Hours + Address -->
+    <div class="visit-info-col">
+
+      <!-- Hours -->
+      <section aria-labelledby="hours-heading">
+        <h2 id="hours-heading" class="visit-info-title"
+            data-es="Horarios"
+            data-en="Hours">Horarios</h2>
+
+        <!-- VERIFY: Fri-Sat 1 AM or 11 PM -- confirm with Humberto. Rendering 11 PM per brand brief until corrected. -->
+        <table class="hours-table" aria-label="Horarios de apertura">
+          <tbody>
+            <tr>
+              <td data-es="Lunes a jueves" data-en="Monday - Thursday">Lunes a jueves</td>
+              <td>2:00 PM - 11:00 PM</td>
+            </tr>
+            <tr>
+              <td data-es="Viernes y sábado" data-en="Friday - Saturday">Viernes y sábado</td>
+              <td>11:00 AM - 11:00 PM</td>
+            </tr>
+            <tr>
+              <td data-es="Domingo" data-en="Sunday">Domingo</td>
+              <td>11:00 AM - 11:00 PM</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Address -->
+      <section aria-labelledby="address-heading" class="address-block reveal">
+        <h2 id="address-heading" class="visit-info-title"
+            data-es="Dirección"
+            data-en="Address">Dirección</h2>
+
+        <address>
+          <p class="address-street">Av. Luis Encinas 89-B</p>
+          <p class="address-detail"
+             data-es="Entre Calle 12, Recinto Portuario"
+             data-en="Corner of Calle 12, Port District">
+            Entre Calle 12, Recinto Portuario
+          </p>
+          <p class="address-detail">Puerto Peñasco, Sonora 83550</p>
+        </address>
+
+        <p class="directions-blurb"
+           data-es="Estamos en el Recinto Portuario, sobre Av. Luis Encinas y Calle 12. El edificio es de color rojo intenso con el letrero de Los Shakas pintado en la fachada. Si llegas al puerto, ya casi llegaste."
+           data-en="We're in the port district at Av. Luis Encinas and Calle 12. Look for the deep red building with the Los Shakas sign painted on the front. If you hit the port, you're almost there.">
+          Estamos en el Recinto Portuario, sobre Av. Luis Encinas y Calle 12. El edificio es de color rojo intenso con el letrero de Los Shakas pintado en la fachada. Si llegas al puerto, ya casi llegaste.
+        </p>
+      </section>
+
+    </div><!-- /visit-info-col -->
+
+    <!-- RIGHT: Map -->
+    <div class="visit-map-col reveal">
+      <div class="map-wrap">
+        <iframe
+          title="Los Shakas en Google Maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.5!2d-113.5397!3d31.3025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d70baf7a2baf3b%3A0x5c9d0e0ae9cd4f10!2sAv.%20Luis%20Encinas%2089-B%2C%20Recinto%20Portuario%2C%2083550%20Puerto%20Pe%C3%B1asco%2C%20Son.!5e0!3m2!1ses!2smx!4v1700000000000"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          aria-label="Mapa de ubicación de Los Shakas">
+        </iframe>
+      </div>
+    </div>
+
+  </div><!-- /visit-layout -->
+
+  <!-- ENTERTAINMENT BLOCK -->
+  <section id="entertainment" aria-labelledby="entertainment-heading">
+    <div class="entertainment-inner">
+      <h2 id="entertainment-heading" class="section-title entertainment-title reveal"
+          data-es="Más que comer y beber"
+          data-en="More than food and drinks">
+        Más que comer y beber
+      </h2>
+
+      <p class="entertainment-body reveal"
+         data-es="Tenemos pantallas para los partidos, mesa de billar y lo que sigue. Karaoke y música en vivo pronto. Si quieres hacer tu fiesta o reunión aquí, llámanos y lo acomodamos."
+         data-en="We've got screens for the game, a pool table, and more to come. Karaoke and live music on the way. Want to host your party or event here? Call us and we'll make it work.">
+        Tenemos pantallas para los partidos, mesa de billar y lo que sigue. Karaoke y música en vivo pronto. Si quieres hacer tu fiesta o reunión aquí, llámanos y lo acomodamos.
+      </p>
+
+      <div class="entertainment-icons reveal">
+
+        <!-- TV / Sports -->
+        <div class="icon-callout">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+            <line x1="8" y1="21" x2="16" y2="21"/>
+            <line x1="12" y1="17" x2="12" y2="21"/>
+          </svg>
+          <span class="icon-callout-label"
+                data-es="Deportes en vivo"
+                data-en="Live Sports">Deportes en vivo</span>
+        </div>
+
+        <!-- Billiards -->
+        <div class="icon-callout">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <circle cx="8"  cy="10" r="2" fill="var(--teal)" stroke="none"/>
+            <circle cx="16" cy="10" r="2" fill="var(--teal)" stroke="none"/>
+            <circle cx="12" cy="16" r="2" fill="var(--teal)" stroke="none"/>
+          </svg>
+          <span class="icon-callout-label"
+                data-es="Billar"
+                data-en="Pool Table">Billar</span>
+        </div>
+
+        <!-- Party / Groups -->
+        <div class="icon-callout">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+          <span class="icon-callout-label"
+                data-es="Eventos y grupos"
+                data-en="Events &amp; Groups">Eventos y grupos</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <div id="visit-cta" class="reveal" role="region" aria-labelledby="visit-cta-heading">
+    <h2 id="visit-cta-heading" class="section-title visit-cta-title"
+        data-es="¿Tienes preguntas? Llámanos."
+        data-en="Questions? Give us a call.">
+      ¿Tienes preguntas? Llámanos.
+    </h2>
+    <p class="visit-cta-sub"
+       data-es="También puedes avisarnos si vienes en grupo grande, les reservamos el espacio."
+       data-en="If you're coming with a big group, let us know and we'll get your space ready.">
+      También puedes avisarnos si vienes en grupo grande, les reservamos el espacio.
+    </p>
+    <a href="tel:6383835892" class="visit-cta-phone">638-383-5892</a>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand reveal">
+      <img class="footer-logo" src="assets/logo.jpg" alt="Los Shakas" width="48" height="48">
+      <p class="footer-tagline"
+         data-es="Otra gran opción en Puerto Peñasco. 🤙🏽"
+         data-en="Another great option in Rocky Point. 🤙🏽">
+        Otra gran opción en Puerto Peñasco. 🤙🏽
+      </p>
+    </div>
+    <div class="footer-col reveal">
+      <p class="footer-col-title" data-es="Horarios" data-en="Hours">Horarios</p>
+      <p data-es="Lun-Jue: 2:00 PM - 11:00 PM" data-en="Mon-Thu: 2:00 PM - 11:00 PM">Lun-Jue: 2:00 PM - 11:00 PM</p>
+      <p data-es="Vie-Dom: 11:00 AM - 11:00 PM" data-en="Fri-Sun: 11:00 AM - 11:00 PM">Vie-Dom: 11:00 AM - 11:00 PM</p>
+    </div>
+    <div class="footer-col reveal">
+      <p class="footer-col-title" data-es="Encuéntranos" data-en="Find us">Encuéntranos</p>
+      <address>
+        <p>Av. Luis Encinas 89-B</p>
+        <p data-es="Recinto Portuario, Puerto Peñasco, Son." data-en="Port District, Puerto Peñasco, Son.">Recinto Portuario, Puerto Peñasco, Son.</p>
+        <p><a href="tel:6383835892">638-383-5892</a></p>
+      </address>
+    </div>
+    <div class="footer-col reveal">
+      <p class="footer-col-title" data-es="Síguenos" data-en="Follow us">Síguenos</p>
+      <div class="footer-social-links">
+        <a href="https://www.facebook.com/801759266356153" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/losshakasrockypoint" target="_blank" rel="noopener noreferrer">@losshakasrockypoint</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Los Shakas. Puerto Peñasco, Sonora, México.</p>
+  </div>
+</footer>
+
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <button id="lightbox-close" aria-label="Cerrar">&times;</button>
+  <button id="lightbox-prev" aria-label="Anterior">&#8249;</button>
+  <img id="lightbox-img" src="" alt="">
+  <button id="lightbox-next" aria-label="Siguiente">&#8250;</button>
+</div>
+
+<script src="js/main.js" type="module"></script>
+</body>
+</html>

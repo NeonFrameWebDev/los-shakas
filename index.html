@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<!-- ASSET NEEDED: Replace logo.jpg with high-res (1000px+) or SVG vector before client delivery. Current source is 200px FB profile pic. -->
+<html lang="es" data-es-title="Los Shakas | Bar y Restaurante | Puerto Peñasco" data-en-title="Los Shakas | Bar & Restaurant | Puerto Peñasco">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Shakas | Bar y Restaurante | Puerto Peñasco</title>
+  <meta name="description" content="Los Shakas - Bar y Restaurante en Puerto Peñasco, Sonora. Mariscos frescos, cerveza a -4°C, precios increíbles. Recinto Portuario, Av. Luis Encinas 89-B.">
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://neonframewebdev.github.io/los-shakas/">
+  <meta property="og:title"       content="Los Shakas | Bar y Restaurante | Puerto Peñasco">
+  <meta property="og:description" content="Mariscos frescos del puerto, cerveza a -4°C y mucho amor en cada platillo. El edificio rojo grande en la esquina del Recinto Portuario.">
+  <meta property="og:image"       content="https://neonframewebdev.github.io/los-shakas/assets/exterior_1.jpg">
+  <meta property="og:locale"      content="es_MX">
+  <meta property="og:locale:alternate" content="en_US">
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Los Shakas | Bar y Restaurante | Puerto Peñasco">
+  <meta name="twitter:description" content="Mariscos frescos del puerto, cerveza a -4°C y mucho amor en cada platillo.">
+  <meta name="twitter:image"       content="https://neonframewebdev.github.io/los-shakas/assets/exterior_1.jpg">
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     PAGE LOADER
+     ============================================================ -->
+<div id="loader" role="status" aria-label="Cargando...">
+  <img id="loader-logo" src="assets/logo.jpg" alt="Los Shakas logo" width="80" height="80">
+  <div id="loader-wordmark">Los Shakas</div>
+  <div id="loader-bar"></div>
+</div>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav id="main-nav" role="navigation" aria-label="Navegación principal">
+  <a class="nav-brand" href="index.html" aria-label="Los Shakas - Inicio">
+    <img class="nav-logo" src="assets/logo.jpg" alt="Los Shakas" width="40" height="40">
+    <span class="nav-wordmark">Los Shakas</span>
+  </a>
+
+  <div class="nav-right">
+    <ul class="nav-links" role="list">
+      <li><a href="index.html"   class="nav-page-link active" data-es="Inicio"       data-en="Home">Inicio</a></li>
+      <li><a href="menu.html"    class="nav-page-link"        data-es="Menú"         data-en="Menu">Menú</a></li>
+      <li><a href="gallery.html" class="nav-page-link"        data-es="Galería"      data-en="Gallery">Galería</a></li>
+      <li><a href="visit.html"   class="nav-page-link"        data-es="Encuéntranos" data-en="Visit">Encuéntranos</a></li>
+    </ul>
+
+    <div class="lang-toggle" aria-label="Cambiar idioma">
+      <button class="lang-btn-es active" aria-label="Español">ES</button>
+      <button class="lang-btn-en"        aria-label="English">EN</button>
+    </div>
+
+    <button id="nav-hamburger" class="nav-hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile nav drawer -->
+<div id="nav-mobile-menu" class="nav-mobile-menu" aria-hidden="true">
+  <ul role="list">
+    <li><a href="index.html"   class="nav-page-link active" data-es="Inicio"       data-en="Home">Inicio</a></li>
+    <li><a href="menu.html"    class="nav-page-link"        data-es="Menú"         data-en="Menu">Menú</a></li>
+    <li><a href="gallery.html" class="nav-page-link"        data-es="Galería"      data-en="Gallery">Galería</a></li>
+    <li><a href="visit.html"   class="nav-page-link"        data-es="Encuéntranos" data-en="Visit">Encuéntranos</a></li>
+  </ul>
+</div>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section id="hero" aria-label="Hero">
+  <div class="hero-bg" role="img" aria-label="Fachada del edificio Los Shakas en el Recinto Portuario"></div>
+  <div class="hero-overlay"></div>
+
+  <img class="hero-badge" src="assets/logo.jpg" alt="Los Shakas logo badge" width="80" height="80">
+
+  <div class="hero-content">
+    <h1 class="hero-headline reveal"
+        data-es="Otra gran opción en Puerto Peñasco."
+        data-en="Another great option in Rocky Point.">
+      Otra gran opción en Puerto Peñasco.
+    </h1>
+    <p class="hero-sub reveal"
+       data-es="Mariscos frescos del puerto, cerveza a -4°C y mucho amor en cada platillo. 🤙🏽"
+       data-en="Fresh seafood from the port, the coldest beer in town, and a lot of love in every dish. 🤙🏽">
+      Mariscos frescos del puerto, cerveza a -4°C y mucho amor en cada platillo. 🤙🏽
+    </p>
+    <div class="hero-ctas reveal">
+      <a href="visit.html" class="btn btn-primary"
+         data-es="Cáele desde las 2 PM"
+         data-en="Come in from 2 PM">
+        Cáele desde las 2 PM
+      </a>
+      <a href="menu.html" class="btn btn-secondary"
+         data-es="Ver el menú"
+         data-en="See the menu">
+        Ver el menú
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT / STORY
+     ============================================================ -->
+<section id="about" aria-labelledby="about-heading">
+  <div class="about-inner">
+    <div class="about-body reveal">
+      <h2 id="about-heading" class="section-title about-title"
+          data-es="Quiénes somos"
+          data-en="Who we are">
+        Quiénes somos
+      </h2>
+
+      <div class="flag-ribbon" aria-hidden="true">
+        <span class="fr-red"></span>
+        <span class="fr-white"></span>
+        <span class="fr-green"></span>
+      </div>
+
+      <p data-es="Somos dos amigos con una visión: traerle a Puerto Peñasco un lugar sin pretensiones donde la comida es buena de verdad, las cervezas están bien frías y los precios no te hacen pensar dos veces."
+         data-en="Two friends, one bold vision: bring Rocky Point a no-nonsense spot where the food is genuinely good, the beers are ice cold, and the prices never make you think twice.">
+        Somos dos amigos con una visión: traerle a Puerto Peñasco un lugar sin pretensiones donde la comida es buena de verdad, las cervezas están bien frías y los precios no te hacen pensar dos veces.
+      </p>
+
+      <p data-es="Abrimos en noviembre de 2025 en el Recinto Portuario. El Chef Leo trae 22 años de experiencia a la cocina y cambia el menú seguido, siempre con mariscos frescos directo de los pescadores del puerto y carne de Top Meats. Ray Ray y Chino están atrás de la barra listos para prepararte lo que se te antoje, incluyendo su famoso Coctel Increíble, hecho a tu gusto."
+         data-en="We opened in November 2025 in the port district. Chef Leo brings 22 years in the kitchen and switches the menu often, always with seafood sourced daily from Puerto Peñasco fishing boats and meat from Top Meats. Ray Ray and Chino are behind the bar ready to make you whatever you're feeling, including their signature Coctel Increíble, built to your palate.">
+        Abrimos en noviembre de 2025 en el Recinto Portuario. El Chef Leo trae 22 años de experiencia a la cocina y cambia el menú seguido, siempre con mariscos frescos directo de los pescadores del puerto y carne de Top Meats. Ray Ray y Chino están atrás de la barra listos para prepararte lo que se te antoje, incluyendo su famoso Coctel Increíble, hecho a tu gusto.
+      </p>
+
+      <p data-es="Locales y visitantes, todos son bienvenidos. Precios increíbles para todos."
+         data-en="Locals and visitors, everyone's welcome. Unbeatable prices for all.">
+        Locales y visitantes, todos son bienvenidos. Precios increíbles para todos.
+      </p>
+    </div>
+
+    <div class="about-photo-wrap reveal">
+      <img src="assets/interior_1.jpg"
+           alt="Interior del bar Los Shakas lleno de gente, con pantallas de deportes y el mural del logo en la pared"
+           loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DAILY SPECIALS
+     ============================================================ -->
+<section id="specials" aria-labelledby="specials-heading">
+  <div class="specials-header reveal">
+    <h2 id="specials-heading" class="section-title specials-title"
+        data-es="Las promociones de la semana"
+        data-en="Specials all week long">
+      Las promociones de la semana
+    </h2>
+    <p class="specials-intro"
+       data-es="Cada día hay un motivo más para venir. 🍻"
+       data-en="There's always a reason to come in. 🍻">
+      Cada día hay un motivo más para venir. 🍻
+    </p>
+  </div>
+
+  <div class="specials-grid">
+
+    <!-- Monday -->
+    <div class="special-card reveal">
+      <div class="special-day"
+           data-es="Lunes"
+           data-en="Monday">Lunes</div>
+      <div class="special-offer"
+           data-es="BURROS &amp; BEER"
+           data-en="BURROS &amp; BEER">BURROS &amp; BEER</div>
+      <div class="special-price"
+           data-es="$110 MXN el burro | $27 el tarro"
+           data-en="$110 MXN a burrito | $27 MXN a draft">
+        $110 MXN el burro | $27 el tarro
+      </div>
+      <p class="special-desc"
+         data-es="Elige tu bando: Puerco en Salsa Verde, Puerco en Salsa Roja o Pollo Asado. Todo con frijolitos puercos y queso Oaxaca que estira. Cáele desde las 2 PM."
+         data-en="Pick your side: Green Chili Pork, Red Chili Pork, or Grilled Chicken. All served with frijoles puercos and stretchy Oaxaca cheese. Come in from 2 PM.">
+        Elige tu bando: Puerco en Salsa Verde, Puerco en Salsa Roja o Pollo Asado. Todo con frijolitos puercos y queso Oaxaca que estira. Cáele desde las 2 PM.
+      </p>
+    </div>
+
+    <!-- Tuesday -->
+    <div class="special-card reveal">
+      <div class="special-day"
+           data-es="Martes"
+           data-en="Tuesday">Martes</div>
+      <div class="special-offer"
+           data-es="TACOS &amp; BEER"
+           data-en="TACOS &amp; BEER">TACOS &amp; BEER</div>
+      <div class="special-price"
+           data-es="$27 MXN el taco | $27 la chela"
+           data-en="$1.50 USD taco | $1.50 USD draft beer">
+        $27 MXN el taco | $27 la chela
+      </div>
+      <p class="special-desc"
+         data-es="Pastor, Pollo Asado, Birria, Cabeza. Tacos calientes a $27 MXN cada uno con cerveza de barril al mismo precio. $1.50 USD. Así de simple."
+         data-en="Pastor, Grilled Chicken, Birria, Cabeza. Hot tacos at $1.50 USD each with draft beer at the same price. That's it.">
+        Pastor, Pollo Asado, Birria, Cabeza. Tacos calientes a $27 MXN cada uno con cerveza de barril al mismo precio. $1.50 USD. Así de simple.
+      </p>
+    </div>
+
+    <!-- Wednesday -->
+    <div class="special-card reveal">
+      <div class="special-day"
+           data-es="Miércoles"
+           data-en="Wednesday">Miércoles</div>
+      <div class="special-offer"
+           data-es="WINGS 2x1"
+           data-en="WINGS 2-FOR-1">WINGS 2x1</div>
+      <div class="special-price"
+           data-es="Pides uno, te cobran uno"
+           data-en="Order one, pay for one">
+        Pides uno, te cobran uno
+      </div>
+      <p class="special-desc"
+         data-es="Boneless en seis sabores: Buffalo, BBQ, Thai Chili, Ajo Parmesano, Limón Pimienta o Habanero con Miel."
+         data-en="Boneless in six flavors: Buffalo, BBQ, Thai Chili, Garlic Parmesan, Lemon Pepper, or Honey Habanero.">
+        Boneless en seis sabores: Buffalo, BBQ, Thai Chili, Ajo Parmesano, Limón Pimienta o Habanero con Miel.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     FEATURED DISHES
+     ============================================================ -->
+<section id="featured" aria-labelledby="featured-heading">
+  <div class="featured-header reveal">
+    <h2 id="featured-heading" class="section-title featured-title"
+        data-es="Del menú del Chef Leo"
+        data-en="From Chef Leo's kitchen">
+      Del menú del Chef Leo
+    </h2>
+  </div>
+
+  <div class="featured-grid">
+
+    <!-- Green Chili Pork -->
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="assets/dish_3.jpg"
+             alt="Green Chili Pork - puerco en salsa verde"
+             loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <h3 class="dish-card-name">Green Chili Pork</h3>
+        <hr class="dish-card-rule">
+        <p class="dish-card-desc"
+           data-es="El platillo que te va a hacer volver. Puerco cocinado en salsa verde con mucho carácter. El favorito de los que ya nos conocen."
+           data-en="The dish that brings people back. Pork slow-cooked in green chili sauce with real depth. The regulars already know.">
+          El platillo que te va a hacer volver. Puerco cocinado en salsa verde con mucho carácter. El favorito de los que ya nos conocen.
+        </p>
+      </div>
+    </div>
+
+    <!-- Blackened Mako Shark -->
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="assets/dish_4.jpg"
+             alt="Blackened Mako Shark - tiburón mako ennegrecido fresco del puerto"
+             loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <h3 class="dish-card-name">Blackened Mako Shark</h3>
+        <hr class="dish-card-rule">
+        <p class="dish-card-desc"
+           data-es="Tiburón mako ennegrecido, fresco del puerto, preparado por el Chef Leo. No es un platillo de todos los días y por eso lo tienes que probar."
+           data-en="Fresh mako from the port, blackened by Chef Leo. Not an everyday dish. That's exactly why you order it.">
+          Tiburón mako ennegrecido, fresco del puerto, preparado por el Chef Leo. No es un platillo de todos los días y por eso lo tienes que probar.
+        </p>
+      </div>
+    </div>
+
+    <!-- Beer Battered Fish -->
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="assets/dish_1.jpg"
+             alt="Beer Battered Fish - pescado en tempura de cerveza"
+             loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <h3 class="dish-card-name">Beer Battered Fish</h3>
+        <hr class="dish-card-rule">
+        <p class="dish-card-desc"
+           data-es="Pescado en tempura de cerveza. Crujiente por fuera, jugoso por dentro. Mariscos del día, siempre frescos."
+           data-en="Crispy beer batter, fresh catch of the day. Crunchy outside, tender inside. Always sourced from the boats that morning.">
+          Pescado en tempura de cerveza. Crujiente por fuera, jugoso por dentro. Mariscos del día, siempre frescos.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     REVIEWS / SOCIAL PROOF
+     ============================================================ -->
+<section id="reviews" aria-labelledby="reviews-heading">
+  <div class="reviews-header reveal">
+    <h2 id="reviews-heading" class="section-title reviews-title"
+        data-es="Lo que dice la gente"
+        data-en="What people are saying">
+      Lo que dice la gente
+    </h2>
+  </div>
+
+  <div class="reviews-grid">
+
+    <div class="review-block reveal">
+      <span class="review-quote-mark" aria-hidden="true">"</span>
+      <p class="review-text"
+         data-es="Los Shakas está rápidamente ganando un lugar especial en la escena gastronómica de Rocky Point con un concepto refrescante: precios justos tanto para locales como para americanos, sin sacrificar calidad, creatividad ni ambiente."
+         data-en="Los Shakas is quickly carving out a special place in the Rocky Point dining and bar scene with a refreshingly simple and much-needed concept: fair pricing for locals and Americans alike, without sacrificing quality, creativity, or atmosphere.">
+        Los Shakas está rápidamente ganando un lugar especial en la escena gastronómica de Rocky Point con un concepto refrescante: precios justos tanto para locales como para americanos, sin sacrificar calidad, creatividad ni ambiente.
+      </p>
+      <span class="review-attr">Rocky Point Foodie</span>
+    </div>
+
+    <div class="review-block reveal">
+      <span class="review-quote-mark" aria-hidden="true">"</span>
+      <p class="review-text"
+         data-es="un lugar donde el sabor simplemente destaca"
+         data-en="a place where the flavor simply stands out">
+        un lugar donde el sabor simplemente destaca
+      </p>
+      <span class="review-attr"
+            data-es="@rockypointconnects en TikTok"
+            data-en="@rockypointconnects on TikTok">
+        @rockypointconnects en TikTok
+      </span>
+    </div>
+
+  </div>
+
+  <p class="reviews-supporting reveal"
+     data-es="Más de 5,000 reseñas en Google. Juzga tú mismo."
+     data-en="5,000+ Google reviews. Come see for yourself.">
+    Más de 5,000 reseñas en Google. Juzga tú mismo.
+  </p>
+</section>
+
+<!-- ============================================================
+     HOME FOOTER CTA / HOURS STRIP
+     ============================================================ -->
+<section id="home-cta" aria-labelledby="home-cta-heading">
+  <h2 id="home-cta-heading" class="section-title home-cta-title reveal"
+      data-es="Listos para atenderte."
+      data-en="Ready to serve you.">
+    Listos para atenderte.
+  </h2>
+  <p class="home-cta-hours reveal"
+     data-es="Lunes a jueves desde las 2 PM. Viernes a domingo desde las 11 AM."
+     data-en="Mon-Thu from 2 PM. Fri-Sun from 11 AM.">
+    Lunes a jueves desde las 2 PM. Viernes a domingo desde las 11 AM.
+  </p>
+  <a href="tel:6383835892" class="home-cta-btn reveal"
+     data-es="Llámanos: 638-383-5892"
+     data-en="Call us: 638-383-5892">
+    Llámanos: 638-383-5892
+  </a>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="footer-inner">
+
+    <div class="footer-brand reveal">
+      <img class="footer-logo" src="assets/logo.jpg" alt="Los Shakas" width="48" height="48">
+      <p class="footer-tagline"
+         data-es="Otra gran opción en Puerto Peñasco. 🤙🏽"
+         data-en="Another great option in Rocky Point. 🤙🏽">
+        Otra gran opción en Puerto Peñasco. 🤙🏽
+      </p>
+    </div>
+
+    <div class="footer-col reveal">
+      <p class="footer-col-title"
+         data-es="Horarios"
+         data-en="Hours">Horarios</p>
+      <p data-es="Lun-Jue: 2:00 PM - 11:00 PM"
+         data-en="Mon-Thu: 2:00 PM - 11:00 PM">
+        Lun-Jue: 2:00 PM - 11:00 PM
+      </p>
+      <p data-es="Vie-Dom: 11:00 AM - 11:00 PM"
+         data-en="Fri-Sun: 11:00 AM - 11:00 PM">
+        Vie-Dom: 11:00 AM - 11:00 PM
+      </p>
+    </div>
+
+    <div class="footer-col reveal">
+      <p class="footer-col-title"
+         data-es="Encuéntranos"
+         data-en="Find us">Encuéntranos</p>
+      <address>
+        <p>Av. Luis Encinas 89-B</p>
+        <p data-es="Recinto Portuario, Puerto Peñasco, Son."
+           data-en="Port District, Puerto Peñasco, Son.">
+          Recinto Portuario, Puerto Peñasco, Son.
+        </p>
+        <p><a href="tel:6383835892">638-383-5892</a></p>
+      </address>
+    </div>
+
+    <div class="footer-col reveal" style="grid-column: auto;">
+      <p class="footer-col-title"
+         data-es="Síguenos"
+         data-en="Follow us">Síguenos</p>
+      <div class="footer-social-links">
+        <a href="https://www.facebook.com/801759266356153" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/losshakasrockypoint" target="_blank" rel="noopener noreferrer">@losshakasrockypoint</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Los Shakas. Puerto Peñasco, Sonora, México.</p>
+  </div>
+</footer>
+
+<!-- Lightbox (shared, unused on this page but included for JS consistency) -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <button id="lightbox-close" aria-label="Cerrar">&times;</button>
+  <button id="lightbox-prev" aria-label="Anterior">&#8249;</button>
+  <img id="lightbox-img" src="" alt="">
+  <button id="lightbox-next" aria-label="Siguiente">&#8250;</button>
+</div>
+
+<script src="js/main.js" type="module"></script>
+</body>
+</html>

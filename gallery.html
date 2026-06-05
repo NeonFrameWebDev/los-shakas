@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- ASSET NEEDED: Replace logo.jpg with high-res (1000px+) or SVG vector before client delivery. Current source is 200px FB profile pic. -->
+<html lang="es" data-es-title="Galería | Los Shakas | Puerto Peñasco" data-en-title="Gallery | Los Shakas | Puerto Peñasco">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería | Los Shakas | Puerto Peñasco</title>
+  <meta name="description" content="Galería de fotos de Los Shakas - el ambiente, la barra, los platillos y los que nos visitan. Puerto Peñasco, Recinto Portuario.">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://neonframewebdev.github.io/los-shakas/gallery.html">
+  <meta property="og:title"       content="Galería | Los Shakas | Puerto Peñasco">
+  <meta property="og:description" content="El ambiente, la comida, la gente. Todo en un solo lugar en el Recinto Portuario.">
+  <meta property="og:image"       content="https://neonframewebdev.github.io/los-shakas/assets/interior_1.jpg">
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- PAGE LOADER -->
+<div id="loader" role="status" aria-label="Cargando...">
+  <img id="loader-logo" src="assets/logo.jpg" alt="Los Shakas logo" width="80" height="80">
+  <div id="loader-wordmark">Los Shakas</div>
+  <div id="loader-bar"></div>
+</div>
+
+<!-- NAVIGATION -->
+<nav id="main-nav" role="navigation" aria-label="Navegación principal">
+  <a class="nav-brand" href="index.html" aria-label="Los Shakas - Inicio">
+    <img class="nav-logo" src="assets/logo.jpg" alt="Los Shakas" width="40" height="40">
+    <span class="nav-wordmark">Los Shakas</span>
+  </a>
+  <div class="nav-right">
+    <ul class="nav-links" role="list">
+      <li><a href="index.html"   class="nav-page-link" data-es="Inicio"       data-en="Home">Inicio</a></li>
+      <li><a href="menu.html"    class="nav-page-link" data-es="Menú"         data-en="Menu">Menú</a></li>
+      <li><a href="gallery.html" class="nav-page-link" data-es="Galería"      data-en="Gallery">Galería</a></li>
+      <li><a href="visit.html"   class="nav-page-link" data-es="Encuéntranos" data-en="Visit">Encuéntranos</a></li>
+    </ul>
+    <div class="lang-toggle" aria-label="Cambiar idioma">
+      <button class="lang-btn-es active" aria-label="Español">ES</button>
+      <button class="lang-btn-en"        aria-label="English">EN</button>
+    </div>
+    <button id="nav-hamburger" class="nav-hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="nav-mobile-menu" class="nav-mobile-menu" aria-hidden="true">
+  <ul role="list">
+    <li><a href="index.html"   class="nav-page-link" data-es="Inicio"       data-en="Home">Inicio</a></li>
+    <li><a href="menu.html"    class="nav-page-link" data-es="Menú"         data-en="Menu">Menú</a></li>
+    <li><a href="gallery.html" class="nav-page-link" data-es="Galería"      data-en="Gallery">Galería</a></li>
+    <li><a href="visit.html"   class="nav-page-link" data-es="Encuéntranos" data-en="Visit">Encuéntranos</a></li>
+  </ul>
+</div>
+
+<!-- PAGE BANNER -->
+<header class="page-banner" aria-labelledby="gallery-heading">
+  <h1 id="gallery-heading" class="section-title page-banner-title section-title-teal-underline reveal"
+      data-es="Así somos"
+      data-en="This is us.">
+    Así somos
+  </h1>
+  <p class="page-banner-sub reveal"
+     data-es="El ambiente, la comida, la gente. Todo en un solo lugar en el Recinto Portuario. 🤙🏽"
+     data-en="The vibe, the food, the people. All in one place in the port district. 🤙🏽">
+    El ambiente, la comida, la gente. Todo en un solo lugar en el Recinto Portuario. 🤙🏽
+  </p>
+</header>
+
+<!-- GALLERY GRID -->
+<main>
+  <div class="gallery-grid" role="list" aria-label="Galería de fotos">
+
+    <!--
+      Order per design spec: interior_1, exterior_1, atmosphere_1, dish_1, dish_4, dish_3, exterior_2, event_1
+      interior_1 loads eager as the anchor shot; all others lazy-load
+    -->
+
+    <!-- La barra / The bar -->
+    <div class="gallery-item reveal" role="listitem" aria-label="Interior del bar - La barra">
+      <img src="assets/interior_1.jpg"
+           alt="Interior del bar Los Shakas lleno de gente, pantallas con deportes y mural del logo"
+           loading="eager"
+           width="800">
+    </div>
+
+    <!-- El ambiente / The vibe -->
+    <div class="gallery-item reveal" role="listitem" aria-label="Fachada exterior - El edificio rojo">
+      <img src="assets/exterior_1.jpg"
+           alt="Fachada del edificio rojo de Los Shakas en el Recinto Portuario con el letrero pintado"
+           loading="lazy"
+           width="800">
+    </div>
+
+    <div class="gallery-item reveal" role="listitem" aria-label="Letrero de neón Los Shakas">
+      <img src="assets/atmosphere_1.jpg"
+           alt="Letrero de neón OPEN y logo de Los Shakas en letras de neón teal sobre fondo negro"
+           loading="lazy"
+           width="800">
+    </div>
+
+    <!-- Los platillos / The food -->
+    <div class="gallery-item reveal" role="listitem" aria-label="Wings en salsa Buffalo">
+      <img src="assets/dish_1.jpg"
+           alt="Boneless wings en salsa Buffalo con el logo de Los Shakas"
+           loading="lazy"
+           width="800">
+    </div>
+
+    <div class="gallery-item reveal" role="listitem" aria-label="Tacos y platos">
+      <img src="assets/dish_4.jpg"
+           alt="Plato de tacos - birria, pastor, pollo asado y cabeza con limón y salsa"
+           loading="lazy"
+           width="800">
+    </div>
+
+    <div class="gallery-item reveal" role="listitem" aria-label="Comida de la barra">
+      <img src="assets/dish_3.jpg"
+           alt="Platillo de la barra con queso fundido siendo jalado"
+           loading="lazy"
+           width="800">
+    </div>
+
+    <!-- Exterior wider -->
+    <div class="gallery-item reveal" role="listitem" aria-label="Vista exterior más amplia">
+      <img src="assets/exterior_2.jpg"
+           alt="Vista más amplia del edificio de Los Shakas en la esquina del Recinto Portuario"
+           loading="lazy"
+           width="800">
+    </div>
+
+    <!-- Los que nos visitan / Our guests -->
+    <!--
+      event_1.jpg: bachelorette group bathroom mirror shot.
+      Cropped tightly via CSS object-fit and object-position to show the group faces and tile surround.
+      Stall hardware is outside the cropped viewport.
+    -->
+    <div class="gallery-item reveal" role="listitem" aria-label="Grupo de festejo en Los Shakas">
+      <img src="assets/event_1.jpg"
+           alt="Grupo grande celebrando en Los Shakas - perfectos para eventos y fiestas"
+           loading="lazy"
+           width="800"
+           style="object-fit: cover; object-position: center top;">
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand reveal">
+      <img class="footer-logo" src="assets/logo.jpg" alt="Los Shakas" width="48" height="48">
+      <p class="footer-tagline"
+         data-es="Otra gran opción en Puerto Peñasco. 🤙🏽"
+         data-en="Another great option in Rocky Point. 🤙🏽">
+        Otra gran opción en Puerto Peñasco. 🤙🏽
+      </p>
+    </div>
+    <div class="footer-col reveal">
+      <p class="footer-col-title" data-es="Horarios" data-en="Hours">Horarios</p>
+      <p data-es="Lun-Jue: 2:00 PM - 11:00 PM" data-en="Mon-Thu: 2:00 PM - 11:00 PM">Lun-Jue: 2:00 PM - 11:00 PM</p>
+      <p data-es="Vie-Dom: 11:00 AM - 11:00 PM" data-en="Fri-Sun: 11:00 AM - 11:00 PM">Vie-Dom: 11:00 AM - 11:00 PM</p>
+    </div>
+    <div class="footer-col reveal">
+      <p class="footer-col-title" data-es="Encuéntranos" data-en="Find us">Encuéntranos</p>
+      <address>
+        <p>Av. Luis Encinas 89-B</p>
+        <p data-es="Recinto Portuario, Puerto Peñasco, Son." data-en="Port District, Puerto Peñasco, Son.">Recinto Portuario, Puerto Peñasco, Son.</p>
+        <p><a href="tel:6383835892">638-383-5892</a></p>
+      </address>
+    </div>
+    <div class="footer-col reveal">
+      <p class="footer-col-title" data-es="Síguenos" data-en="Follow us">Síguenos</p>
+      <div class="footer-social-links">
+        <a href="https://www.facebook.com/801759266356153" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/losshakasrockypoint" target="_blank" rel="noopener noreferrer">@losshakasrockypoint</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Los Shakas. Puerto Peñasco, Sonora, México.</p>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <button id="lightbox-close" aria-label="Cerrar">&times;</button>
+  <button id="lightbox-prev" aria-label="Foto anterior">&#8249;</button>
+  <img id="lightbox-img" src="" alt="">
+  <button id="lightbox-next" aria-label="Foto siguiente">&#8250;</button>
+</div>
+
+<script src="js/main.js" type="module"></script>
+</body>
+</html>

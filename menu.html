@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<!-- ASSET NEEDED: Replace logo.jpg with high-res (1000px+) or SVG vector before client delivery. Current source is 200px FB profile pic. -->
+<html lang="es" data-es-title="El Menú | Los Shakas | Puerto Peñasco" data-en-title="The Menu | Los Shakas | Puerto Peñasco">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Menú | Los Shakas | Puerto Peñasco</title>
+  <meta name="description" content="El menú de Los Shakas - mariscos frescos, tacos, burritos, wings y más. Cerveza a -4°C. Puerto Peñasco, Recinto Portuario.">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://neonframewebdev.github.io/los-shakas/menu.html">
+  <meta property="og:title"       content="El Menú | Los Shakas | Puerto Peñasco">
+  <meta property="og:description" content="Mariscos frescos, tacos, burritos, wings y cerveza a -4°C. La más fría de la ciudad.">
+  <meta property="og:image"       content="https://neonframewebdev.github.io/los-shakas/assets/dish_1.jpg">
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- PAGE LOADER -->
+<div id="loader" role="status" aria-label="Cargando...">
+  <img id="loader-logo" src="assets/logo.jpg" alt="Los Shakas logo" width="80" height="80">
+  <div id="loader-wordmark">Los Shakas</div>
+  <div id="loader-bar"></div>
+</div>
+
+<!-- NAVIGATION -->
+<nav id="main-nav" role="navigation" aria-label="Navegación principal">
+  <a class="nav-brand" href="index.html" aria-label="Los Shakas - Inicio">
+    <img class="nav-logo" src="assets/logo.jpg" alt="Los Shakas" width="40" height="40">
+    <span class="nav-wordmark">Los Shakas</span>
+  </a>
+
+  <div class="nav-right">
+    <ul class="nav-links" role="list">
+      <li><a href="index.html"   class="nav-page-link" data-es="Inicio"       data-en="Home">Inicio</a></li>
+      <li><a href="menu.html"    class="nav-page-link" data-es="Menú"         data-en="Menu">Menú</a></li>
+      <li><a href="gallery.html" class="nav-page-link" data-es="Galería"      data-en="Gallery">Galería</a></li>
+      <li><a href="visit.html"   class="nav-page-link" data-es="Encuéntranos" data-en="Visit">Encuéntranos</a></li>
+    </ul>
+    <div class="lang-toggle" aria-label="Cambiar idioma">
+      <button class="lang-btn-es active" aria-label="Español">ES</button>
+      <button class="lang-btn-en"        aria-label="English">EN</button>
+    </div>
+    <button id="nav-hamburger" class="nav-hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="nav-mobile-menu" class="nav-mobile-menu" aria-hidden="true">
+  <ul role="list">
+    <li><a href="index.html"   class="nav-page-link" data-es="Inicio"       data-en="Home">Inicio</a></li>
+    <li><a href="menu.html"    class="nav-page-link" data-es="Menú"         data-en="Menu">Menú</a></li>
+    <li><a href="gallery.html" class="nav-page-link" data-es="Galería"      data-en="Gallery">Galería</a></li>
+    <li><a href="visit.html"   class="nav-page-link" data-es="Encuéntranos" data-en="Visit">Encuéntranos</a></li>
+  </ul>
+</div>
+
+<!-- PAGE BANNER -->
+<header class="page-banner" aria-labelledby="menu-heading">
+  <h1 id="menu-heading" class="section-title page-banner-title section-title-teal-underline reveal"
+      data-es="El menú"
+      data-en="The Menu">
+    El menú
+  </h1>
+  <p class="page-banner-sub reveal"
+     data-es="Hecho con la mejor calidad y mucho amor en cada platillo. El Chef Leo cambia el menú seguido, así que siempre hay algo nuevo que probar."
+     data-en="Made with quality and a lot of love in every dish. Chef Leo updates the menu often, so there's always something new.">
+    Hecho con la mejor calidad y mucho amor en cada platillo. El Chef Leo cambia el menú seguido, así que siempre hay algo nuevo que probar.
+  </p>
+</header>
+
+<!-- MENU GRID -->
+<main>
+  <div class="menu-layout">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="menu-col">
+
+      <!-- ENTRADAS / STARTERS -->
+      <section class="menu-section reveal" aria-labelledby="section-entradas">
+        <h2 id="section-entradas" class="menu-section-title"
+            data-es="Para empezar"
+            data-en="Starters">Para empezar</h2>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span class="menu-item-name"
+                  data-es="Chips con Salsa de la Casa"
+                  data-en="Chips and Homemade Salsa">Chips con Salsa de la Casa</span>
+            <span class="menu-item-price price-needed"
+                  data-es="[precio por confirmar]"
+                  data-en="[price to confirm]">[precio por confirmar]</span>
+          </div>
+          <p class="menu-item-desc"
+             data-es="Salsa hecha en casa. Simple, buena y suficiente para abrir el apetito."
+             data-en="House-made salsa. Simple, good, and enough to get things started.">
+            Salsa hecha en casa. Simple, buena y suficiente para abrir el apetito.
+          </p>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span class="menu-item-name copy-needed"
+                  data-es="[más entradas por confirmar con el dueño]"
+                  data-en="[additional starters to confirm with owner]">[más entradas por confirmar con el dueño]</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PLATOS FUERTES / MAINS -->
+      <section class="menu-section reveal" aria-labelledby="section-mains">
+        <h2 id="section-mains" class="menu-section-title"
+            data-es="Platos fuertes"
+            data-en="Mains">Platos fuertes</h2>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span class="menu-item-name">Green Chili Pork</span>
+            <span class="menu-item-price price-needed"
+                  data-es="[precio por confirmar]"
+                  data-en="[price to confirm]">[precio por confirmar]</span>
+          </div>
+          <p class="menu-item-desc"
+             data-es="Puerco en salsa verde. Cocinado con tiempo, sabor de fondo, sin prisa. El favorito de la casa."
+             data-en="Pork in green chili sauce. Slow-cooked, deep flavor, no shortcuts. The house favorite.">
+            Puerco en salsa verde. Cocinado con tiempo, sabor de fondo, sin prisa. El favorito de la casa.
+          </p>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span class="menu-item-name"
+                  data-es="Green Chili Hamburger con Papas Fritas"
+                  data-en="Green Chili Hamburger with Fries">Green Chili Hamburger con Papas Fritas</span>
+            <span class="menu-item-price price-needed"
+                  data-es="[precio por confirmar]"
+                  data-en="[price to confirm]">[precio por confirmar]</span>
+          </div>
+          <p class="menu-item-desc"
+             data-es="Hamburguesa con chiles verdes y papas fritas. Directo, sin adornos innecesarios."
+             data-en="Burger with green chilis and fries. Straight to the point.">
+            Hamburguesa con chiles verdes y papas fritas. Directo, sin adornos innecesarios.
+          </p>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span class="menu-item-name"
+                  data-es="Pollo Asado"
+                  data-en="Grilled Chicken">Pollo Asado</span>
+            <span class="menu-item-price price-needed"
+                  data-es="[precio por confirmar]"
+                  data-en="[price to confirm]">[precio por confirmar]</span>
+          </div>
+          <p class="menu-item-desc copy-needed"
+             data-es="[descripción por confirmar con Chef Leo]"
+             data-en="[description to confirm with Chef Leo]">
+            [descripción por confirmar con Chef Leo]
+          </p>
+        </div>
+      </section>
+
+      <!-- MARISCOS / SEAFOOD -->
+      <section class="menu-section reveal" aria-labelledby="section-seafood">
+        <h2 id="section-seafood" class="menu-section-title"
+            data-es="Del mar al plato"
+            data-en="From the sea to the plate">Del mar al plato</h2>
+
+        <p class="menu-intro"
+           data-es="Mariscos frescos del puerto, cada día. Los pescadores del Recinto Portuario nos los traen directo."
+           data-en="Fresh seafood every day. The fishing boats from the port district bring it in direct.">
+          Mariscos frescos del puerto, cada día. Los pescadores del Recinto Portuario nos los traen directo.
+        </p>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span class="menu-item-name">Blackened Mako Shark</span>
+            <span class="menu-item-price price-needed"
+                  data-es="[precio por confirmar]"
+                  data-en="[price to confirm]">[precio por confirmar]</span>
+          </div>
+          <p class="menu-item-desc"
+             data-es="Tiburón mako ennegrecido con especias. Fresco de las lanchas del puerto, preparado por el Chef Leo."
+             data-en="Mako shark blackened with spices. Fresh off the Puerto Peñasco boats, prepared by Chef Leo.">
+            Tiburón mako ennegrecido con especias. Fresco de las lanchas del puerto, preparado por el Chef Leo.
+          </p>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span class="menu-item-name">Beer Battered Fish</span>
+            <span class="menu-item-price price-needed"
+                  data-es="[precio por confirmar]"
+                  data-en="[price to confirm]">[precio por confirmar]</span>
+          </div>
+          <p class="menu-item-desc"
+             data-es="Pescado del día en tempura de cerveza. Crujiente, fresco, sin pretensiones."
+             data-en="Fresh catch of the day in beer batter. Crispy, fresh, no fuss.">
+            Pescado del día en tempura de cerveza. Crujiente, fresco, sin pretensiones.
+          </p>
+        </div>
+
+        <div class="menu-item">
+          <span class="menu-item-name copy-needed"
+                data-es="[más platillos de mariscos por confirmar]"
+                data-en="[additional seafood items to confirm]">[más platillos de mariscos por confirmar]</span>
+        </div>
+      </section>
+
+    </div><!-- /left column -->
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="menu-col">
+
+      <!-- TACOS -->
+      <section class="menu-section reveal" aria-labelledby="section-tacos">
+        <h2 id="section-tacos" class="menu-section-title">Tacos</h2>
+
+        <!-- Tuesday special callout -->
+        <div class="menu-special-card">
+          <div class="menu-special-card-day"
+               data-es="Martes de Tacos &amp; Beer"
+               data-en="Taco Tuesday">Martes de Tacos &amp; Beer</div>
+          <p class="menu-special-card-text"
+             data-es="$27 MXN el taco | $27 MXN la cerveza de barril. Todos los martes. 🤙🏽"
+             data-en="$1.50 USD per taco | $1.50 USD draft beer. Every Tuesday. 🤙🏽">
+            $27 MXN el taco | $27 MXN la cerveza de barril. Todos los martes. 🤙🏽
+          </p>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span class="menu-item-name"
+                  data-es="Tacos (Pastor / Pollo Asado / Birria / Cabeza)"
+                  data-en="Tacos (Pastor / Grilled Chicken / Birria / Cabeza)">Tacos (Pastor / Pollo Asado / Birria / Cabeza)</span>
+            <span class="menu-item-price price-needed"
+                  data-es="[precio fuera del especial]"
+                  data-en="[price outside Tuesday special]">[precio fuera del especial]</span>
+          </div>
+          <p class="menu-item-desc"
+             data-es="Cuatro opciones, todos calientes y a punto. Pídelos por separado o arma tu orden."
+             data-en="Four options, all hot and fresh. Order individually or mix and match.">
+            Cuatro opciones, todos calientes y a punto. Pídelos por separado o arma tu orden.
+          </p>
+        </div>
+      </section>
+
+      <!-- BURRITOS -->
+      <section class="menu-section reveal" aria-labelledby="section-burritos">
+        <h2 id="section-burritos" class="menu-section-title">Burritos</h2>
+
+        <!-- Monday special callout -->
+        <div class="menu-special-card">
+          <div class="menu-special-card-day"
+               data-es="Lunes de Burros &amp; Beer"
+               data-en="Monday Burros &amp; Beer">Lunes de Burros &amp; Beer</div>
+          <p class="menu-special-card-text"
+             data-es="Todos los burritos a $110 MXN. Tarro a $27 MXN. Cáele desde las 2 PM."
+             data-en="All burritos $110 MXN. Draft beer $27 MXN. Come in from 2 PM.">
+            Todos los burritos a $110 MXN. Tarro a $27 MXN. Cáele desde las 2 PM.
+          </p>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span class="menu-item-name"
+                  data-es="Burrito de Puerco en Salsa Verde"
+                  data-en="Green Chili Pork Burrito">Burrito de Puerco en Salsa Verde</span>
+            <span class="menu-item-price price-needed"
+                  data-es="[precio fuera del lunes]"
+                  data-en="[price outside Monday special]">[precio fuera del lunes]</span>
+          </div>
+          <p class="menu-item-desc"
+             data-es="Puerco en salsa verde con frijoles puercos y queso Oaxaca que estira."
+             data-en="Pork in green chili sauce with frijoles puercos and stretchy Oaxaca cheese.">
+            Puerco en salsa verde con frijoles puercos y queso Oaxaca que estira.
+          </p>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span class="menu-item-name"
+                  data-es="Burrito de Puerco en Salsa Roja"
+                  data-en="Red Chili Pork Burrito">Burrito de Puerco en Salsa Roja</span>
+            <span class="menu-item-price price-needed"
+                  data-es="[precio fuera del lunes]"
+                  data-en="[price outside Monday special]">[precio fuera del lunes]</span>
+          </div>
+          <p class="menu-item-desc"
+             data-es="Puerco en salsa roja con frijoles puercos y queso Oaxaca."
+             data-en="Pork in red chili sauce with frijoles puercos and Oaxaca cheese.">
+            Puerco en salsa roja con frijoles puercos y queso Oaxaca.
+          </p>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span class="menu-item-name"
+                  data-es="Burrito de Pollo Asado"
+                  data-en="Grilled Chicken Burrito">Burrito de Pollo Asado</span>
+            <span class="menu-item-price price-needed"
+                  data-es="[precio fuera del lunes]"
+                  data-en="[price outside Monday special]">[precio fuera del lunes]</span>
+          </div>
+          <p class="menu-item-desc"
+             data-es="Pollo asado con frijoles puercos y queso Oaxaca."
+             data-en="Grilled chicken with frijoles puercos and Oaxaca cheese.">
+            Pollo asado con frijoles puercos y queso Oaxaca.
+          </p>
+        </div>
+      </section>
+
+      <!-- WINGS -->
+      <section class="menu-section reveal" aria-labelledby="section-wings">
+        <h2 id="section-wings" class="menu-section-title">Wings</h2>
+
+        <!-- Wednesday special callout -->
+        <div class="menu-special-card">
+          <div class="menu-special-card-day"
+               data-es="Miércoles de Wings 2x1"
+               data-en="Wing Wednesday 2-for-1">Miércoles de Wings 2x1</div>
+          <p class="menu-special-card-text"
+             data-es="Boneless 2x1 todos los miércoles. Pides uno, te cobran uno."
+             data-en="Boneless 2-for-1 every Wednesday. Order one, pay for one.">
+            Boneless 2x1 todos los miércoles. Pides uno, te cobran uno.
+          </p>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span class="menu-item-name"
+                  data-es="Boneless Wings"
+                  data-en="Boneless Wings">Boneless Wings</span>
+            <span class="menu-item-price price-needed"
+                  data-es="[precio fuera del miércoles]"
+                  data-en="[price outside Wednesday 2-for-1]">[precio fuera del miércoles]</span>
+          </div>
+          <p class="menu-item-desc"
+             data-es="Seis sabores: Buffalo, BBQ, Thai Chili, Ajo Parmesano, Limón Pimienta, Habanero con Miel."
+             data-en="Six flavors: Buffalo, BBQ, Thai Chili, Garlic Parmesan, Lemon Pepper, Honey Habanero.">
+            Seis sabores: Buffalo, BBQ, Thai Chili, Ajo Parmesano, Limón Pimienta, Habanero con Miel.
+          </p>
+        </div>
+      </section>
+
+      <!-- BEBIDAS / DRINKS -->
+      <section class="menu-section reveal" aria-labelledby="section-drinks">
+        <h2 id="section-drinks" class="menu-section-title"
+            data-es="Las bebidas"
+            data-en="Drinks">Las bebidas</h2>
+
+        <div class="drinks-cold-statement"
+             data-es="Cerveza servida a -4°C. La más fría de la ciudad. 🍻"
+             data-en="Beer served at -4°C (28°F). The coldest beer in town. 🍻">
+          Cerveza servida a -4°C. La más fría de la ciudad. 🍻
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span class="menu-item-name"
+                  data-es="Cerveza de Barril"
+                  data-en="Draft Beer">Cerveza de Barril</span>
+            <span class="menu-item-price">$27 MXN</span>
+          </div>
+          <p class="menu-item-desc"
+             data-es="Carta Blanca y Tecate de barril, servidas a -4°C. $27 MXN el tarro."
+             data-en="Carta Blanca and Tecate on draft, served at -4°C. $27 MXN a glass (~$1.50 USD).">
+            Carta Blanca y Tecate de barril, servidas a -4°C. $27 MXN el tarro.
+          </p>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span class="menu-item-name">Margaritas</span>
+            <span class="menu-item-price price-needed"
+                  data-es="[precio por confirmar]"
+                  data-en="[price to confirm]">[precio por confirmar]</span>
+          </div>
+          <p class="menu-item-desc copy-needed"
+             data-es="[descripción y sabores por confirmar con Ray Ray o Chino]"
+             data-en="[description and flavors to confirm with Ray Ray or Chino]">
+            [descripción y sabores por confirmar con Ray Ray o Chino]
+          </p>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span class="menu-item-name">Espresso Martini</span>
+            <span class="menu-item-price price-needed"
+                  data-es="[precio por confirmar]"
+                  data-en="[price to confirm]">[precio por confirmar]</span>
+          </div>
+          <p class="menu-item-desc copy-needed"
+             data-es="[descripción por confirmar con Ray Ray o Chino]"
+             data-en="[description to confirm with Ray Ray or Chino]">
+            [descripción por confirmar con Ray Ray o Chino]
+          </p>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span class="menu-item-name">Coctel Increíble</span>
+            <span class="menu-item-price price-needed"
+                  data-es="[precio por confirmar]"
+                  data-en="[price to confirm]">[precio por confirmar]</span>
+          </div>
+          <p class="menu-item-desc"
+             data-es="El cóctel de la casa. Ray Ray y Chino lo hacen a tu gusto. Sin receta fija, solo diles qué te late y ellos lo arman."
+             data-en="The house cocktail. Ray Ray and Chino build it to your taste. No fixed recipe, just tell them what you're feeling.">
+            El cóctel de la casa. Ray Ray y Chino lo hacen a tu gusto. Sin receta fija, solo diles qué te late y ellos lo arman.
+          </p>
+        </div>
+      </section>
+
+    </div><!-- /right column -->
+
+  </div><!-- /menu-layout -->
+
+  <!-- MENU FOOTER NOTE -->
+  <div class="menu-footer-note reveal">
+    <p data-es-html='El menú cambia seguido. El Chef Leo trabaja con lo que hay fresco cada día. Llámanos para saber qué hay hoy: <a href="tel:6383835892">638-383-5892</a>.'
+       data-en-html='The menu changes often. Chef Leo works with whatever&apos;s fresh each day. Call us to find out what&apos;s on today: <a href="tel:6383835892">638-383-5892</a>.'>
+      El menú cambia seguido. El Chef Leo trabaja con lo que hay fresco cada día. Llámanos para saber qué hay hoy: <a href="tel:6383835892">638-383-5892</a>.
+    </p>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand reveal">
+      <img class="footer-logo" src="assets/logo.jpg" alt="Los Shakas" width="48" height="48">
+      <p class="footer-tagline"
+         data-es="Otra gran opción en Puerto Peñasco. 🤙🏽"
+         data-en="Another great option in Rocky Point. 🤙🏽">
+        Otra gran opción en Puerto Peñasco. 🤙🏽
+      </p>
+    </div>
+    <div class="footer-col reveal">
+      <p class="footer-col-title" data-es="Horarios" data-en="Hours">Horarios</p>
+      <p data-es="Lun-Jue: 2:00 PM - 11:00 PM" data-en="Mon-Thu: 2:00 PM - 11:00 PM">Lun-Jue: 2:00 PM - 11:00 PM</p>
+      <p data-es="Vie-Dom: 11:00 AM - 11:00 PM" data-en="Fri-Sun: 11:00 AM - 11:00 PM">Vie-Dom: 11:00 AM - 11:00 PM</p>
+    </div>
+    <div class="footer-col reveal">
+      <p class="footer-col-title" data-es="Encuéntranos" data-en="Find us">Encuéntranos</p>
+      <address>
+        <p>Av. Luis Encinas 89-B</p>
+        <p data-es="Recinto Portuario, Puerto Peñasco, Son." data-en="Port District, Puerto Peñasco, Son.">Recinto Portuario, Puerto Peñasco, Son.</p>
+        <p><a href="tel:6383835892">638-383-5892</a></p>
+      </address>
+    </div>
+    <div class="footer-col reveal">
+      <p class="footer-col-title" data-es="Síguenos" data-en="Follow us">Síguenos</p>
+      <div class="footer-social-links">
+        <a href="https://www.facebook.com/801759266356153" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/losshakasrockypoint" target="_blank" rel="noopener noreferrer">@losshakasrockypoint</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Los Shakas. Puerto Peñasco, Sonora, México.</p>
+  </div>
+</footer>
+
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <button id="lightbox-close" aria-label="Cerrar">&times;</button>
+  <button id="lightbox-prev" aria-label="Anterior">&#8249;</button>
+  <img id="lightbox-img" src="" alt="">
+  <button id="lightbox-next" aria-label="Siguiente">&#8250;</button>
+</div>
+
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
