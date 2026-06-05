@@ -474,15 +474,16 @@ a {
   inset: 0;
   background-image: url('../assets/exterior_1.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: center 38%;
   background-repeat: no-repeat;
-  animation: kenBurns 12s ease-in-out infinite alternate;
+  animation: heroEntrance 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
+             kenBurns 16s 2.2s ease-in-out infinite alternate;
   will-change: transform;
 }
 
 @media (min-width: 768px) {
   .hero-bg {
-    background-position: 60% center;
+    background-position: center 38%;
     background-attachment: fixed;
   }
 }
@@ -494,9 +495,28 @@ a {
   }
 }
 
+@keyframes heroEntrance {
+  from { opacity: 0.1; transform: scale(1.12); }
+  to   { opacity: 1;   transform: scale(1.0); }
+}
+
 @keyframes kenBurns {
   from { transform: scale(1.0); }
-  to   { transform: scale(1.05); }
+  to   { transform: scale(1.03); }
+}
+
+.hero-entrance {
+  position: absolute;
+  inset: 0;
+  background: #0D0D0D;
+  z-index: 1;
+  pointer-events: none;
+  animation: entranceFade 2.6s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+@keyframes entranceFade {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 .hero-overlay {
