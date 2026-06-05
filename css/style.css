@@ -1179,6 +1179,37 @@ footer {
 }
 
 /* ----------------------------------------------------------
+   LANGUAGE-GATED VISIBILITY
+   ---------------------------------------------------------- */
+[data-lang-show="en"],
+[data-lang-show="es"] { display: none !important; }
+
+html[lang="es"] [data-lang-show="es"] { display: block !important; }
+html[lang="en"] [data-lang-show="en"] { display: block !important; }
+
+/* ----------------------------------------------------------
+   MENU IMAGES
+   ---------------------------------------------------------- */
+.menu-images-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+
+.menu-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-images img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+}
+
+/* ----------------------------------------------------------
    MENU PAGE
    ---------------------------------------------------------- */
 .menu-layout {
